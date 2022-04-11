@@ -9,16 +9,16 @@ cd ProjectDirectory
 ./vendor/bin/sail up
 ```
 
-##To Run tests
+## To Run tests
 
 ```
 ./vendor/bin/sail artisan test
 ```
 
-##PHP version
+## PHP version
 PHP version should be higher than 7.4. Having docker installed handles this for you automatically.
 
-##If docker is not installed
+## If docker is not installed
 ```
 update PHP version to >7.4 or 8
 cd ProjectDirectory
