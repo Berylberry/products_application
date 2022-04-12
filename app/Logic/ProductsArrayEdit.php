@@ -10,11 +10,10 @@ class ProductsArrayEdit implements \App\Interfaces\ProductsArrayCropAndEdit
      */
     public function FinalEditingOfProducts(array $products)
     {
-        $slicedArray = array_slice($products['products'], 0, 5);
+        $slicedArray = array_slice($products, 0, 5);
 //        dd($slicedArray);
         $finalProductArray = array();
         foreach ($slicedArray as $product){
-//            dd($product);
             $details = array();
             $details['original'] = $product['price'];
             if ($product['category'] === "boots" && $product['sku'] === "000003"){

@@ -30,7 +30,7 @@ class ProductsController extends Controller
             $secondaryEditArray = $this->sortProducts->sortProducts($initialEditArray, $category, $priceLessThan);
             $tertiaryEditArray = $this->productsArrayEdit->FinalEditingOfProducts($secondaryEditArray);
         }else{
-            $tertiaryEditArray = $this->productsArrayEdit->FinalEditingOfProducts($initialEditArray);
+            $tertiaryEditArray = $this->productsArrayEdit->FinalEditingOfProducts($initialEditArray['products']);
         }
 
         return response()->json($tertiaryEditArray, 200);

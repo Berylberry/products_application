@@ -9,6 +9,14 @@ cd ProjectDirectory
 ./vendor/bin/sail up
 ```
 
+## API Endpoint
+```
+GET: /api/products
+//query parameters - both required if used
+category
+priceLessThan
+```
+
 ## To Run tests
 
 ```
